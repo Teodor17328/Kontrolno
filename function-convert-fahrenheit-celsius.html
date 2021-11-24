@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lnag="bg">
+<head>
+    <meta charset="utf-8">
+    <title>Функция за преобразуване на температура от фаренхайт в целзий</title>
+</head>
+<body>
+    <h2>Преобразуване на температура от фаренхайт в целзий</h2>
+    <p id="demo"></p>
+
+    <script>
+        document.getElementById("demo").innerHTML = "Температурата е " + toCelsius(180).toFixed(1) + "&#8451;";
+
+        function toCelsius(fahrenheit){
+            return (5/9) * (fahrenheit-32);
+        }
+    </script>
+
+</body>
+</html>
